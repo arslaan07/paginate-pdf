@@ -1,0 +1,78 @@
+{
+  "name": "paginate-pdf",
+  "version": "0.1.0",
+  "description": "Turn any DOM element into a paginated PDF that never cuts through a line of text or an image — page breaks always land in an empty gap.",
+  "keywords": [
+    "pdf",
+    "html2canvas",
+    "jspdf",
+    "html-to-pdf",
+    "dom-to-pdf",
+    "page-break",
+    "pagination",
+    "print"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "import": "./dist/react.js",
+      "require": "./dist/react.cjs"
+    },
+    "./testing": {
+      "types": "./dist/testing.d.ts",
+      "import": "./dist/testing.js",
+      "require": "./dist/testing.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "html2canvas-pro": "^2.4.0",
+    "jspdf": "^4.2.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "esbuild": "^0.28.2",
+    "playwright": "^1.62.1",
+    "react": "^19.0.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_GITHUB_USERNAME/paginate-pdf.git"
+  },
+  "homepage": "https://github.com/YOUR_GITHUB_USERNAME/paginate-pdf#readme",
+  "bugs": {
+    "url": "https://github.com/YOUR_GITHUB_USERNAME/paginate-pdf/issues"
+  }
+}
