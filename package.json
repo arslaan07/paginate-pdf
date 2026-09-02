@@ -69,10 +69,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YOUR_GITHUB_USERNAME/paginate-pdf.git"
+    "url": "git+https://github.com/arslaan07/paginate-pdf.git"
   },
-  "homepage": "https://github.com/YOUR_GITHUB_USERNAME/paginate-pdf#readme",
+  "homepage": "https://github.com/arslaan07/paginate-pdf#readme",
   "bugs": {
-    "url": "https://github.com/YOUR_GITHUB_USERNAME/paginate-pdf/issues"
+    "url": "https://github.com/arslaan07/paginate-pdf/issues"
   }
 }
